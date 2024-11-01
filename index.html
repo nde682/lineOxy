@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>test</title>
+  <style>
+    body{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #f8f8f8;
+    }
+    #canvas{
+        position: relative;
+
+    }
+    
+  </style>
+</head>
+<body>
+  <label for="slope">Nhập hệ số góc (a):</label>
+  <input type="number" id="slope" step="any" onkeypress="keyPress(event)">
+  <button onclick="drawLine(document.getElementById('slope').value,0)">Vẽ đường thẳng</button>
+  <canvas id="canvas"></canvas>
+  <button onclick="resetGame()">Chơi lại</button>
+  <script src="script.js"></script>
+</body>
+</html>
