@@ -172,6 +172,7 @@ function checkWinner() {
 //chơi lại
 function resetGame() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
+    isWinner = false;
     Mx = Math.floor(Math.random() * canvas.width);
     My = Math.floor(Math.random() * canvas.height);
     drawAxes();
